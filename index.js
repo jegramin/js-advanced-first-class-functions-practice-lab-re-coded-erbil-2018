@@ -29,7 +29,7 @@ function driversByName(drivers){
 function totalRevenue(drivers){
   return drivers.reduce(function(agg,el,i,arr){
     let total = 0;
-    return parseInt(agg) + parseInt(el.revenue);
+    return parseInt(agg + el.revenue);
   },[])
 }
 
