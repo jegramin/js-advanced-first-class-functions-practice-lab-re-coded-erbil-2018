@@ -21,7 +21,9 @@ function driversByRevenue(drivers){
 }
 
 function driversByName(drivers){
-  return 
+  return drivers.slice().sort(function(a,b){
+    return a.name - b.name;
+  })
 }
 
 
