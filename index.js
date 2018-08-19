@@ -32,7 +32,11 @@ function totalRevenue(drivers){
   },[])
 }
 
-function 
+function averageRevenue(drivers){
+  let average = (drivers.reduce(function(agg,el){
+    return parseInt(agg + el.revenue);
+  },[])/drivers.length)
+}
 
 
 
