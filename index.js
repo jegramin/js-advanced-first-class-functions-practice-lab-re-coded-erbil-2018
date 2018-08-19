@@ -5,7 +5,13 @@ function logDriverNames(drivers){
   }
 }
 
-
+function logDriversByHometown(drivers,hometown){
+  logDriverNames(drivers).map(function(driver){
+    if(driver.hometown === hometown){
+      console.log(driver.name);
+    }
+  })
+}
 
 
 
