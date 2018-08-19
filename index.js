@@ -22,7 +22,7 @@ function driversByRevenue(drivers){
 
 function driversByName(drivers){
   return drivers.slice().sort(function(a,b){
-    return b.name.localCompare(a.name);
+    return b.name.localcompare(a.name);
   })
 }
 
