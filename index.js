@@ -14,6 +14,10 @@ function logDriversByHometown(drivers,hometown){
   }
 }
 
+function driversByRevenue(){
+  
+}
+
 
 
 
