@@ -2,16 +2,16 @@
 function logDriverNames(drivers){
   for(const driver of drivers){
     console.log(driver.name);
-    return driver;
+    
   }
 }
 
 function logDriversByHometown(drivers,hometown){
-  logDriverNames(drivers).map(function(driver){
+  for(const driver of drivers){
     if(driver.hometown === hometown){
       console.log(driver.name);
     }
-  })
+  }
 }
 
 
